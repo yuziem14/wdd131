@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Temples</title>
+    <meta name="description" content="Temples Page Activity.">
+    <meta name="author" content="Yuri F. Ziemba Nunes">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+
+        <button id="menu"></button>
+        <nav class="navigation">
+            <a href="#" title="Home" class="active">Home</a>
+            <a href="#" title="Old">Old</a>
+            <a href="#" title="New">New</a>
+            <a href="#" title="Large">Large</a>
+            <a href="#" title="Small">Small</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Home</h2>
+        <section id="gallery">
+            <!-- This section is being populate via Javascript -->
+            <!-- <figure class="gallery-item">
+                <img src="images/temples/curitiba-brazil-temple.jpg" alt="Curitiba Brazil Temple">
+                <figcaption>Curitiba Brazil</figcaption>
+            </figure> -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Yuri Ziemba Nunes | Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/temples.js" defer></script>
+</body>
+</html>

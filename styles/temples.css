@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    font-size: 16px;
+    --primary-color: #0466c8;
+    --secondary-color: #ffd500;
+    --primary-font-color: #fdfdfd;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    background-color: var(--primary-color);
+    color: var(--primary-font-color);
+}
+
+header nav:not(.open) {
+    display: none;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+header nav a {
+    color: var(--primary-font-color);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    transition: 0.5s;
+}
+
+header nav a:hover, header nav a.active {
+    color: var(--secondary-color);
+}
+
+header #menu {
+    background-color: transparent;
+    border: none;
+    font-size: 40px;
+    color: var(--primary-font-color);
+}
+
+header:has(nav.open) h1 {
+    display: none;
+}
+
+header:has(nav.open) #menu {
+    position: absolute;
+    padding: 16px;
+    top: 0;
+    right: 0;
+}
+
+main {
+    max-width: 96%;
+    margin: 1rem auto;
+}
+
+main h2 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+main section#gallery {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+}
+
+main section#gallery .gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+
+main section#gallery .gallery-item img {
+    width: 100%;
+}
+
+main section#gallery .gallery-item figcaption {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    min-height: 88px;
+    margin-top: auto;
+}
+
+footer p {
+    font-size: 18px;
+    color: var(--primary-font-color);
+}
+
+footer #lastModified {
+    color: var(--secondary-color);
+    margin-top: 8px;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
