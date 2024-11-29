@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 131 - Place</title>
+    <meta name="description" content="Place Page Activity." />
+    <meta name="author" content="Yuri F. Ziemba Nunes" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/place.css" />
+    <link rel="stylesheet" href="styles/places-large.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Brazil</h1>
+    </header>
+    <main>
+      <div class="wallpaper">
+        <picture>
+          <source
+            srcset="images/place/brazil-small.webp"
+            media="(max-width: 639px)"
+          />
+          <source
+            srcset="images/place/brazil-large.webp"
+            media="(min-width: 640px)"
+          />
+          <img src="images/place/brazil-large.webp" alt="Brazil City" />
+        </picture>
+      </div>
+      <section class="data">
+        <h2>Data</h2>
+        <ul>
+          <li><span class="title">Area:</span> <span>8,515,767.049 sq km</span></li>
+          <li><span class="title">Population:</span> <span>211,998,573</span></li>
+          <li><span class="title">Capital:</span> <span>Brasília</span></li>
+          <li><span class="title">Languages:</span> <span>Portuguese</span></li>
+          <li><span class="title">Currency:</span> <span>Brazilian Real (BRL)</span></li>
+          <li><span class="title">Time Zone:</span> <span>GMT-3</span></li>
+          <li><span class="title">Calling Code:</span> <span>+55</span></li>
+          <li><span class="title">Internet TLD:</span> <span>.br</span></li>
+        </ul>
+      </section>
+      <section class="weather">
+        <h2>Weather</h2>
+        <img
+          src="images/place/weather.svg"
+          width="48"
+          height="48"
+          alt="Weather Icon"
+        />
+        <ul>
+          <li><span class="title">Temperature:</span> <span id="temperature">23ºC</span></li>
+          <li><span class="title">Conditions:</span> <span>Cloudy</span></li>
+          <li><span class="title">Wind:</span> <span id="wind-speed">3 km/h</span></li>
+          <li><span class="title">Wind Chill:</span> <span id="wind-chill"></span></li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>&copy;<span id="currentyear"></span> | Yuri Ziemba Nunes | Brazil</p>
+      <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+:root {
+    font-size: 16px;
+    --primary-color: #009739;
+    --background-opaque-color: rgba(255, 255, 255, 0.8);
+    --primary-font: 'Roboto';
+    --box-shadow-default: 2px 2px 8px rgba(0, 0, 0, 0.15);
+    --header-opaque-background: rgba(255, 213, 0, 0.88);
+    --header-title-color: #000;
+    --footer-text-color: #000;
+    --footer-highlight-color: #000;
+}
+
+body {
+    font-family: var(--primary-font), sans-serif;
+}
+
+header {
+    border-bottom: 0.25rem solid var(--secondary-color);
+}
+
+header, footer {
+    padding: 1.5rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+}
+
+main .wallpaper img {
+    max-width: 100%;
+    margin-bottom: -4px;
+}
+
+
+main section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0.5rem;
+}
+
+main section.weather {
+    border-top: 2px solid #ebebeb;
+}
+
+main section h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+main section ul li {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0.5rem;
+    text-align: left;
+    margin: 0.5rem 0;
+}
+
+span.title {
+    text-align: right;
+    font-weight: 700;
+}
+
+section.weather h2 {
+    margin: 0;
+}
+
+section.weather img {
+    margin: 0.5rem 0;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: var(--secondary-color);
+}
