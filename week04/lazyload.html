@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 131 - Lazy Load Example</title>
+    <meta name="description" content="Lazy Load Learning Activity Example Page." />
+    <meta name="author" content="Yuri F. Ziemba Nunes" />
+    <link rel="stylesheet" href="../styles/base.css" />
+    <link rel="stylesheet" href="styles/lazyload.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Lazy Loading Example</h1>
+    </header>
+    <main>
+      <img
+        src="https://images.unsplash.com/photo-1518639192441-8fce0a366e2e?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Rio de Janeiro"
+        width="400"
+        loading="lazy">
+      <img
+        src="https://images.unsplash.com/photo-1662692735672-544412d65934?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Brazil Flag"
+        width="400"
+        loading="lazy">
+      <img
+        src="https://images.unsplash.com/photo-1560273644-10a40ea5722c?q=80&w=1993&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Curitiba Brazil"
+        width="400"
+        loading="lazy">
+      <img
+        src="https://images.unsplash.com/photo-1484189282192-2d8dea38b614?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Kyoto Japan"
+        width="400"
+        loading="lazy">
+      <img
+        src="https://images.unsplash.com/photo-1607078486875-a697a8a38e87?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Warsow Poland"
+        width="400"
+        loading="lazy">
+      <img
+        src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Yosemite Valley, USA"
+        width="400"
+        loading="lazy">
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Yuri Ziemba Nunes | Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+  
+      <script src="../scripts/getdates.js" defer></script>
+  </body>
+</html>
