@@ -13,52 +13,17 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primary-color);
 }
 
-header {
-    min-height: 8rem;
-    background-color: var(--primary-color);
-    background-image: none;
-    margin-bottom: 2rem;
-}
-
-header h1 {
-    color: var(--dark-color);
-}
-
-header nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
-    position: relative;
-    z-index: 3;
-}
-
-header nav ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 1rem;
-    margin-top: 2rem;
-}
-
-header nav ul li a {
-    color: var(--dark-color);
-    font-size: 1.25rem;
-    transition: color 0.5s;
-}
-
-header nav ul li a:hover, header nav ul li a.active {
-    color: var(--dark-color);
-}
-
 main p {
     color: var(--light-color);
 }
 
 main section h2 {
     margin-bottom: 1rem;
+}
+
+main section h3 {
+    margin-bottom: 0.75rem;
+    margin-top: 1rem;
 }
 
 main section p {
@@ -122,4 +87,18 @@ section#result .result-box {
 section#result .result-box p {
     color: var(--dark-color);
     font-weight: bold;
+}
+
+section.about .image-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+    row-gap: 0.5rem;
+}
+
+section.about img {
+    max-width: 300px;
+    border-radius: 0.5rem;
 }
