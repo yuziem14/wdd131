@@ -1,0 +1,22 @@
+:root {
+    font-size: 16px;
+    --primary-color: #FFAD48;
+    --secondary-color: #0d579b;
+    --success-color: #70c776;
+    --light-color: #fdfdfd;
+    --dark-color: #232323;
+    --primary-font: 'Ubuntu';
+    --secondary-font: 'Inter';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: var(--secondary-font), var(--primary-font), sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--primary-font), var(--secondary-font), sans-serif;
+}
