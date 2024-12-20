@@ -102,3 +102,37 @@ section.about img {
     max-width: 300px;
     border-radius: 0.5rem;
 }
+
+section.wallets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.wallets .list-items {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+    list-style: none;
+    margin-top: 2rem;
+}
+
+section.wallets .list-items .item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1rem;
+    background-color: var(--light-color);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+section.wallets .list-items .item h4, section.wallets .list-items .item p {
+    color: var(--secondary-color);
+}
+
+section.wallets .list-items .item img {
+    max-width: 8rem;
+    border-radius: 100%;
+}

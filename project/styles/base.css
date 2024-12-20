@@ -130,6 +130,13 @@ form button {
     width: 100%;
 }
 
+form select {
+    min-height: var(--input-height);
+    border: 0;
+    outline: 0;
+    border-radius: 0.5rem;
+}
+
 .hidden {
     display: none !important;
 }
@@ -140,7 +147,7 @@ form button {
     header.menu {
         min-height: 16rem;
         background-image: url(../images/bitcoin-banner.jpg);
-        background-color: none;
+        background-color: transparent;
         background-size: cover;
         background-position: 50%;
         position: relative;

@@ -1,3 +1,9 @@
+@media screen and (min-width: 400px) {
+    section.wallets .list-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media screen and (min-width: 800px) {
     section.summary img {
         display: block;
@@ -10,6 +16,10 @@
         column-gap: 3rem;
     }
 
+    main section article {
+        flex: 1;
+    }
+
     section.simulator form {
         display: flex;
         align-items: flex-end;
@@ -18,5 +28,9 @@
 
     section.simulator form, form .form-input, .form-input input {
         width: max-content;
+    }
+
+    section.wallets .list-items {
+        grid-template-columns: repeat(3, 1fr);
     }
 }

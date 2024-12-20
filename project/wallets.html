@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bitcoin Wikipedia</title>
+    <meta name="description" content="Bitcoin Wikipedia | Project Site" />
+    <meta name="author" content="Yuri F. Ziemba Nunes" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="images/bitcoin-icon.svg" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/site.css" />
+    <link rel="stylesheet" href="styles/site-large.css" />
+  </head>
+  <body>
+    <header class="menu">
+      <nav class="container">
+        <h1>Bitcoin Wikipedia</h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="wallets.html" class="active">Wallets</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+        <section class="summary">
+            <article>
+                <h2>How To Buy Bitcoins?</h2>
+                <p>To buy Bitcoin, you need to use a cryptocurrency exchange, which acts as a platform to trade traditional currencies for Bitcoin. The process begins by selecting a reputable exchange like Coinbase, Binance, or Kraken, where you can deposit money using methods like bank transfers, credit/debit cards, or sometimes PayPal. After creating an account and verifying your identity (which may require uploading identification for security and regulatory reasons), you can fund your account.</p>
+                <p>Once your funds are available, you can place an order for Bitcoin. You have the option to choose a market order, where you buy Bitcoin at the current price, or a limit order, which allows you to set a specific price at which you want to purchase Bitcoin. After placing the order, the exchange will execute it and transfer the Bitcoin to your account.</p>
+                <p>While exchanges offer wallets to store Bitcoin, they are less secure than personal wallets. For enhanced security, especially for long-term storage, it's recommended to transfer your Bitcoin to a private wallet, either hot (software or web wallets) or cold (hardware or paper wallets). Bitcoin's price can be volatile, so it's essential to understand market risks and security best practices when buying and storing your cryptocurrency.</p>
+            </article>
+            <img src="images/bitcoin-icon.svg" loading="lazy" alt="Bitcoin Logo">
+            <article>
+                <h2>How To Store Bitcoins?</h2>
+                <p>Storing Bitcoin safely is crucial, and the two main types of wallets are hot wallets and cold wallets. Hot wallets are connected to the internet and offer convenience for frequent transactions. These include software wallets (apps or desktop programs) and web wallets (online services). While hot wallets are easy to use, they are more vulnerable to hacking since they are always connected to the internet.</p>
+                <p>On the other hand, cold wallets are offline and provide higher security for long-term storage. These include hardware wallets (physical devices like Ledger or Trezor) and paper wallets (printed keys). Cold wallets are less susceptible to online threats since they don't rely on an internet connection, making them ideal for storing large amounts of Bitcoin securely.</p>
+                <p>The key difference lies in security vs. convenience: hot wallets are more accessible for daily use, while cold wallets offer enhanced protection but require more effort for transactions.</p>
+            </article>
+        </section>
+         <section class="wallets">
+            <h2>Bitcoin Exchanges and Wallets</h2>
+            <form>
+                <div class="form-group">
+                    <label for="tool-type">Select a type</label>
+                    <select name="tool-type" id="tool-type">
+                        <option value="all">All</option>
+                        <option value="exchange">Cryptocurrency Exchange</option>
+                        <option value="hotwallet">Hot Wallets</option>
+                        <option value="hardwallet">Hardware Wallets</option>
+                    </select>
+                </div>
+            </form>
+            <ul class="list-items" id="itemsList">
+                <!-- <li class="item" data-type="">
+                    <h4></h4>
+                    <img src="images/logos/.jpg" alt="" loading="lazy">
+                    <p></p>
+                </li> -->
+            </ul>
+        </section>
+    </main>
+
+    <script src="scripts/wallets.js" defer></script>
+  </body>
+</html>
