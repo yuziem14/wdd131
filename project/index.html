@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bitcoin Wikipedia</title>
+    <meta name="description" content="Bitcoin Wikipedia | Project Site" />
+    <meta name="author" content="Yuri F. Ziemba Nunes" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="images/bitcoin-icon.svg" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/site.css" />
+    <link rel="stylesheet" href="styles/site-large.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <h1>Bitcoin Wikipedia</h1>
+        <ul>
+          <li><a href="" class="active">Home</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="wallets">Wallets</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+        <section class="summary">
+            <article>
+                <h2>Why Bitcoin Matters?</h2>
+                <p>Bitcoin matters because it challenges the traditional financial system by offering a decentralized, borderless currency. Unlike fiat money controlled by governments, Bitcoin operates on a secure blockchain, enabling peer-to-peer transactions without intermediaries. Its fixed supply of 21 million coins makes it resistant to inflation, positioning it as a store of value and a potential hedge against economic instability. Bitcoin empowers individuals in underbanked or unstable regions and reduces reliance on centralized institutions. As it gains adoption, Bitcoin has the potential to reshape global finance, fostering a more inclusive, transparent, and efficient monetary system.</p>
+            </article>
+            <img src="images/bitcoin-icon.svg" loading="lazy" alt="Bitcoin Logo">
+            <article>
+                <h2>Why Shoud I Use Bitcoin?</h2>
+                <p>You should consider using Bitcoin for its security, decentralization, and potential financial freedom. Bitcoin transactions are verified on a secure blockchain, offering transparency and reducing fraud risks. Unlike traditional currencies, Bitcoin isn’t controlled by any central authority, which means it is less susceptible to government inflation or currency devaluation. It allows for fast, low-cost cross-border transfers, making it ideal for international payments. Additionally, Bitcoin’s limited supply (21 million coins) positions it as a store of value, potentially protecting your wealth from inflation. As adoption grows, Bitcoin could become a more integral part of the global financial system.</p>
+            </article>
+        </section>
+        <section class="simulator">
+            <h2>How much is Bitcoin worth?</h2>
+            <form>
+                <div class="form-group">
+                    <label for="amount">Amount of USD purchased in Bitcoin</label>
+                    <div class="form-input">
+                        <div class="badge">
+                            <p>USD</p>
+                        </div>
+                        <input type="number" aria-label="Amount of USD purchased in BTC" name="amount" required id="amount" min="0" placeholder="100.00" step=".01">
+                    </div>
+                </div>
+                <button type="submit">Find Out</button>
+            </form>
+        </section>
+        <section id="result" class="hidden">
+            <h3>If you bought USD <span id="amount-bought-usd">100.00</span> in 2016</h3>
+            <h3>Nowadays it would be worth...</h3>
+            <div class="result-box">
+                <p>BTC <span id="btc-amount">0.2202691</span> = USD <span id="usd-amount">21,419.93</span></p>
+            </div>
+        </section>
+    </main>
+
+    <script defer src="scripts/home.js"></script>
+  </body>
+</html>

@@ -5,6 +5,7 @@
     --success-color: #70c776;
     --light-color: #fdfdfd;
     --dark-color: #232323;
+    --overlay-dark-color: rgba(35, 35, 35, 0.40);
     --primary-font: 'Ubuntu';
     --secondary-font: 'Inter';
 }
@@ -19,4 +20,74 @@
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--primary-font), var(--secondary-font), sans-serif;
+}
+
+form {
+    --label-size: 0.875rem;
+    --badge-color: var(--primary-color);
+    --badge-text-color: var(--dark-color);
+    --label-color: var(--light-color);
+    --border-radius-size: 0.25rem;
+    --input-height: 3rem;
+    --button-color: var(--success-color);
+    --button-text-color: var(--dark-color);
+}
+
+form .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 0.5rem;
+}
+
+.form-group .form-input {
+    display: flex;
+    align-items: center;
+}
+
+.form-group label {
+    font-size: var(--label-size);
+    color: var(--label-color);
+}
+
+.form-group .form-input .badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: var(--input-height);
+    padding: 0 1rem;
+    background-color: var(--badge-color);
+    border-top-left-radius: var(--border-radius-size);
+    border-bottom-left-radius: var(--border-radius-size);
+}
+
+.form-group .form-input input {
+    min-height: var(--input-height);
+    display: block;
+    border: 0;
+    outline: 0;
+    padding: 0 0.5rem;
+    border-top-right-radius: var(--border-radius-size);
+    border-bottom-right-radius: var(--border-radius-size);
+}
+
+.form-group .form-input .badge p {
+    margin: 0;
+    color: var(--badge-text-color);
+}
+
+form button {
+    display: block;
+    font-weight: 700;
+    font-size: 1rem;
+    min-height: var(--input-height);
+    border: 0;
+    border-radius: 0.25rem;
+    background-color: var(--button-color);
+    color: var(--button-text-color);
+    width: 100%;
+}
+
+.hidden {
+    display: none !important;
 }

@@ -1,0 +1,125 @@
+
+body {
+    background-color: var(--dark-color);
+    padding-bottom: 3rem;
+}
+
+.container {
+    width: 88%;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+}
+
+header {
+    min-height: 8rem;
+    background-color: var(--primary-color);
+    background-image: none;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    color: var(--dark-color);
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    position: relative;
+    z-index: 3;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    margin-top: 2rem;
+}
+
+header nav ul li a {
+    color: var(--dark-color);
+    font-size: 1.25rem;
+    transition: color 0.5s;
+}
+
+header nav ul li a:hover, header nav ul li a.active {
+    color: var(--dark-color);
+}
+
+main p {
+    color: var(--light-color);
+}
+
+main section h2 {
+    margin-bottom: 1rem;
+}
+
+main section p {
+    line-height: 1.5;
+    text-align: justify;
+}
+
+main section.summary {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 3rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+section.summary img {
+    display: none;
+}
+
+section.simulator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.simulator form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+section.simulator form, form .form-input, .form-input input {
+    width: 100%;
+}
+
+section.simulator form button {
+    min-width: 6rem;
+}
+
+section#result {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+section#result span {
+    font-family: var(--primary-font);
+}
+
+section#result .result-box {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--primary-color);
+}
+
+section#result .result-box p {
+    color: var(--dark-color);
+    font-weight: bold;
+}
